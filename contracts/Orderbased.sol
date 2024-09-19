@@ -16,12 +16,12 @@ contract OrderBasedSwap {
     }
 
     modifier onlyOwner {
-        require(msg.sender == owner, "you can't perform this action")
+        require(msg.sender == owner, "you can't perform this action");
        _; 
     } 
 
     constructor (){
-        owner = msg.sender
+        owner = msg.sender;
     }
 
     uint256 public orderCount;
